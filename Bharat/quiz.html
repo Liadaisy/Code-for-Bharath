@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RightAware – Know Your Rights</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>RightAware – Know Your Citizen Rights</h1>
+
+  <div class="card-container">
+    <div class="card" onclick="toggleSection('mythSection')">Myth vs Fact </div>
+    <div class="card" onclick="toggleSection('quizSection')">Quiz Your Rights! </div>
+  </div>
+
+  <section id="mythSection" class="popup-section">
+    <h2>Myth vs Fact</h2>
+    <p id="myth"></p>
+    <p id="fact"></p>
+    <button onclick="showRandomMyth()">Next Myth</button>
+  </section>
+
+  <section id="quizSection" class="popup-section">
+    <h2>Rights Quiz</h2>
+    <div id="quiz"></div>
+    <button onclick="submitQuiz()">Submit</button>
+    <div id="score"></div>
+    <button onclick="startQuiz()">Restart Quiz</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn Your Rights – RightAware</title>
+  <link rel="stylesheet" href="learn.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script defer src="learn.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>🧠 Learn Your Rights</h1>
+      <p class="subtitle">Tap a category to explore your fundamental rights</p>
+
+      <div class="top-buttons">
+        <button onclick="window.location.href='index.html'" class="back-home">🏠 Home</button>
+        <button id="languageToggle" class="lang-toggle">🌐 മലയാളം</button>
+      </div>
+    </header>
+
+    <div class="category-buttons">
+      <button onclick="showRights('police')">👮 Police</button>
+      <button onclick="showRights('voting')">🗳️ Voting</button>
+      <button onclick="showRights('women')">👩‍⚖️ Women’s Safety</button>
+      <button onclick="showRights('rti')">📜 RTI</button>
+    </div>
+
+    <section id="rights-container" class="card-container">
+      <!-- Cards appear here -->
+    </section>
+  </div>
+</body>
+</html>
